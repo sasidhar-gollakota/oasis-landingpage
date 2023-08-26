@@ -1,0 +1,238 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-image :url('bgimg.jpg');
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.header-top{
+    display: flex;
+    width: 99.8%;
+    flex-direction: row;
+    height: 100px;
+}
+
+.header-top .name-logo{
+    padding:15px;
+    margin-left: 50px;
+    width: 300px;
+    
+}
+.name-logo h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: wheat;
+}
+
+.header-options{
+    display: flex;
+    flex-direction: row;
+    margin-left: 210px;
+    justify-content: space-between;
+    width: 35%;
+    margin-top: 45px;
+    
+}
+
+.header-options a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    color: blanchedalmond;
+    text-decoration: none;
+    opacity: 0;
+    animation:slidein 1s ease forwards;
+}
+
+.search-box{
+    
+    padding: 30px;
+    margin-left: 100px;
+    width: 20%;
+    margin-top: 15px;
+}
+
+.search-box input{
+    padding-left: 10px;
+    width: 270px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: black;
+}
+.search-box i{
+    width: 20px;
+    height: 30px;
+    margin-left: -38px;
+    color: black;
+    cursor: pointer;
+
+}
+
+.header-bottom{
+    display: flex;
+    width:96%;
+    padding: 40px;
+    height: 77vh;
+}
+
+.header-bottom .description-left{
+    width: 49%;
+    display:flex;
+    flex-direction: column;
+}
+
+.description-left h3{
+    margin-left: 90px;
+    margin-top: 50px;
+    font-size: 60px;
+    color: white;
+    opacity: 0;
+    animation:slideleft 1s ease forwards;
+}
+@keyframes slideleft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.description-left h2{
+    margin-left: 90px;
+    margin-top: 20px;
+    font-size: 85px;
+    color: wheat;
+    opacity: 0;
+    animation:slideright 1s ease forwards;
+}
+@keyframes slideright{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.description-left p{
+    margin-left: 90px;
+    margin-top: 50px;
+    font-size: 25px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+.description-left input{
+    width: 190px;
+    height: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:black;
+    background-color:wheat;
+    border-radius: 40px;
+    border: none;
+    margin-top: 80px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+.description-right{
+    background-color:wheat;
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    margin-left: 370px;
+    height: 55vh;
+    margin-top: 150px;
+    border-radius :20px;
+}
+
+.description-right .credentials{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    background-color: wheat;
+    border-radius: 20px;
+}
+
+.description-right input{
+    width: 130px;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-top: 30px;
+    color: wheat;
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    box-shadow: 5px 5px 30px rgb(20, 19, 19);
+}
+.description-right input:hover{
+    cursor: pointer;
+    transform:scale(1.2);
+    box-shadow: 10px 10px 10px wheat;
+
+}
+
+
+.description-right h4{
+    margin-top: 20px;
+    margin-left: 120px;
+    color: black
+}
+.description-right h2{
+    margin-left:120px;
+    color: black;
+}
+.credentials h4{
+    margin-left: -2px;
+}
+.description-right .credentials input{
+    width: 440px;
+    margin-left: 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.boxicons{
+    display: flex;
+    font-size: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 80px;
+    margin-top: 20px;
+    color:black;
+    cursor: pointer;
+    border:1px solid black;
+    border-radius: 10px;
+
+}
+.boxicons i:hover{
+    transform: scale(1.6);
+}
+
+@keyframes slidein{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.termsandconditions{
+    color: wheat;
+    margin-bottom: 10px;
+}
